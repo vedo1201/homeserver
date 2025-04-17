@@ -36,3 +36,7 @@ setting up the static ip in router settings, or directly on server.
 
 
 #### 2. Setting up the static ip in servers network config file
+Another way to set up static ip on ubuntu server is a bit different. You must edit some configuration files in system.
+Here is the guide:
+
+1. In your terminal 
