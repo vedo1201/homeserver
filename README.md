@@ -1,3 +1,5 @@
+# Guide Walktrough
+
 REPOSITORY IS NOT FINISHED! USE IT ON YOUR OWN RISK!
 
 I would highly suggest to read this file before starting, so you know what are you going to work with and what is this server going to look like.
@@ -6,7 +8,6 @@ All of the things in this repo are about home server based on UBUNTU SERVER oper
 
 This repo can be used as guide or help, either for complete beginner or user who is looking to improve their server.
 
-# Test
 
 
 In this guide, I've covrered some things that are must when we talk about stable, secure and reliable home server based on Ubuntu Server.
