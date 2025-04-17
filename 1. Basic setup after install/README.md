@@ -88,6 +88,12 @@ network:
 
 ```
 
+4. After you've done that, you need to replace some values from this config with your own:
+
+   a) <ins>enp0s3</ins> with the name of your adapter that you have found previously with command <ins>ip link</ins>
+   b) <ins>addresses</ins> with static ip that you want to assign to server
+   c) <ins>gateway4</ins> with ip address of your router
+   d) <ins>nameservers</ins> keep those or change to your prefferred one
 
 
 
