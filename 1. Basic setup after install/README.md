@@ -67,7 +67,25 @@ Now, to open it type this command:
 
 <pre> sudo nano 50-cloud-init.yaml </pre>
 
-Replace '<ins>50-cloud-init.yaml</ins>'
+Replace <ins>50-cloud-init.yaml</ins> with the name of the file from the step above.
+
+3. Delete everything from that file and replace it with this:
+
+   <pre> network:
+  version: 2
+  renderer: networkd
+  ethernets:
+    enp0s3:
+      dhcp4: no
+      addresses:
+        - 192.168.1.100/24
+      gateway4: 192.168.1.1
+      nameservers:
+        addresses:
+          - 8.8.8.8
+          - 1.1.1.1
+ </pre>
+
 
 
 
