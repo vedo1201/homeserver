@@ -124,6 +124,37 @@ To make sure our system is always up to date, without needing to do manual updat
 
 <pre> sudo apt install unattended-upgrades && sudo dpkg-reconfigure --priority=low unattended-upgrades  </pre>
 
-On the screen that pops up, chose <ins> Yes </ins> and press ENTER
+On the screen that pops up, chose <ins>Yes</ins> and press ENTER
+
+### 4. SSH Setup (enhancing security)
+In this step, we are going to change the default ssh port so our ssh access is more secure, and also disable root access by ssh.
+
+1. Open the ssh config file by typing:
+
+   <pre>sudo nano /etc/ssh/sshd_config</pre>
+
+2.   Find the line that says:
+
+   <pre>#Port 22</pre>
+
+3.  Uncomment it by removing # and change the port to number that you want (I will chose port 2222). After you have done that, the line should look like this
+
+   <pre>Port 2222</pre>
+
+4. Find the line that says:
+
+   <pre>#PermitRootLogin prohibit-password</pre>
+
+5. Uncomment it and set its value to:
+
+   <pre>PermitRootLogin no</pre>
+
+6. Save the file by entering keyboard combination: <ins>CTRL + X</ins>, <ins>Y</ins>, <ins>ENTER</ins> 
+
+   
+
+
+   
+
 
 
