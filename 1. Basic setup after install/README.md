@@ -40,3 +40,5 @@ Another way to set up static ip on ubuntu server is a bit different. You must ed
 Here is the guide:
 
 1. In your terminal 
+
+<pre> \```bash npm install my-awesome-package \``` </pre>
