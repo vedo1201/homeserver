@@ -174,6 +174,22 @@ And now, for every port you need to open, use the command:
       <pre>sudo ufw allow #PortNumber#</pre>
 
 
+### 6. Installing fail2ban
+Fail2Ban is a software that secures SSH access by blocking ip addresses that have unsuccessfully tried to ssh server by entering the wrong password more than once.
+Install it by using this command:
+
+   <pre>sudo apt install fail2ban</pre>
+
+### 7. Reboot
+Reboot the system to apply all of the changes by typing:
+      <pre>sudo reboot</pre>
+
+
+#And now, we have ubuntu server that is secure, stable and ready for setting up our services!
+
+
+
+
 
 
 
