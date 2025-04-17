@@ -7,7 +7,7 @@ The most important thing to do, when speaking generally about home servers, is t
 so it is important for it not to change every time server restarts. Because of this, the very first thing to do after booting into server is to set up static IP. This can be done by two ways, either
 setting up the static ip in router settings, or directly on server.
 
-#### 1. Setting up the static ip in router settings (easiest)
+#### 1.1. Setting up the static ip in router settings (easiest)
 1. First thing you have to do is to find your routers ip address. If you are using windows, this can be done by opening command prompt and entering the command 'ipconfig'.
    Your routers ip is going to be labeled as default gateway
 
@@ -35,7 +35,7 @@ setting up the static ip in router settings, or directly on server.
 
 
 
-#### 2. Setting up the static ip in servers network config file
+#### 2.1. Setting up the static ip in servers network config file
 Another way to set up static ip on ubuntu server is a bit different. You must edit some configuration files in system.
 Here is the guide:
 
