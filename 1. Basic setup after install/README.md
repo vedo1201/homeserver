@@ -185,7 +185,7 @@ Reboot the system to apply all of the changes by typing:
       <pre>sudo reboot</pre>
 
 
-#And now, we have ubuntu server that is secure, stable and ready for setting up our services!
+# And now, we have ubuntu server that is secure, stable and ready for setting up our services!
 
 
 
