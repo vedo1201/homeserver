@@ -35,7 +35,7 @@ setting up the static ip in router settings, or directly on server.
 
 
 
-#### 2.1. Setting up the static ip in servers network config file
+#### 1.2. Setting up the static ip in servers network config file
 Another way to set up static ip on ubuntu server is a bit different. You must edit some configuration files in system.
 Here is the guide:
 
@@ -95,7 +95,23 @@ network:
    c) <ins>gateway4</ins> with ip address of your router <br>
    d) <ins>nameservers</ins> keep those or change to your prefferred one <br>
 
+After this, you need to restart your server by typing:
 
+<pre> sudo reboot </pre>
 
+Ant that was the other way to set up static ip.
 
+### 2. Update & Upgrade
+Now we want our system to have latest packages which are going to improve system security and stability.
+First, you need to check for available updates by typing:
+
+<pre> sudo apt update </pre>
+
+After the system finds latest updates, you need to install them by typing:
+
+<pre> sudo apt upgrade -y </pre>
+
+After they are instal, restart your server by typing
+
+<pre> sudo reboot </pre>
 
