@@ -1,6 +1,6 @@
 # Guide Walktrough
 
-REPOSITORY IS NOT FINISHED! USE IT ON YOUR OWN RISK!
+# Setting up server based on Ubuntu Server
 
 I would highly suggest to read this file before starting, so you know what are you going to work with and what is this server going to look like.
 
@@ -25,3 +25,5 @@ The things that I have covered about server setup right after install are:
       Backing up containers and the whole server is really important because the whole idea is to make this server easy to re-deploy if something happens with software or hardware used in server.)
 
 After doing those things, you are going to have the system that works smooth and has minimum downtime. 
+
+Next, we are going to setup some of the basic services
