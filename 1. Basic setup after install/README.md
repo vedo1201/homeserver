@@ -17,6 +17,21 @@ setting up the static ip in router settings, or directly on server.
 
    ![{C6E727C7-F473-4E1F-93A5-259D8576D484}](https://github.com/user-attachments/assets/b6d58b91-0261-4135-b3bc-5a70e16a5039)
 
+   After visiting this page, you should be able to login. To find the username and password for your router, you can check the back side of router or look for it on google by searching
+   router model + 'login credentials'
+
+3. After you've logged in, go trough the router pages and find the page that is called 'LAN'. On that same page you can find the 'DHCP Binding' tab in which you are going to put
+   informations about server (can be found in connected devices table in router settings).
+
+   For the example:
+
+    ![{9CBC0A9B-F45F-46F3-983E-663115118B18}](https://github.com/user-attachments/assets/2cb7a3ac-7725-45a0-adc2-3b60106483ad)
+
+4. Click apply
+
+   **And now your server ip is not going to change.**
+
+
 
 
 
