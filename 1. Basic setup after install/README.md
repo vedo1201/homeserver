@@ -71,7 +71,8 @@ Replace <ins>50-cloud-init.yaml</ins> with the name of the file from the step ab
 
 3. Delete everything from that file and replace it with this:
 
-   <pre> network:
+```bash
+network:
   version: 2
   renderer: networkd
   ethernets:
@@ -84,7 +85,8 @@ Replace <ins>50-cloud-init.yaml</ins> with the name of the file from the step ab
         addresses:
           - 8.8.8.8
           - 1.1.1.1
- </pre>
+
+```
 
 
 
