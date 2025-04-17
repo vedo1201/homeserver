@@ -152,6 +152,30 @@ In this step, we are going to change the default ssh port so our ssh access is m
 6. Save the file by entering keyboard combination: <ins>CTRL + X</ins>, <ins>Y</ins>, <ins>ENTER</ins> 
 
    
+### 5. Setting up the firewall
+Firewall is very important for your server security, it blocks all the ports on server by defaults, and the only way to port go trough the firewall is that you need to enable it.
+We are going to use UFW (Uncompiled Firewall) on our server.
+
+1. Install UFW by typing:
+
+   <pre>sudo apt install ufw</pre>
+
+3. Enable ssh trough firewall by typing:
+
+      <pre>sudo ufw allow OpenSSH #Enables ssh service trough firewall</pre>
+      And
+      <pre>sudo ufw allow 2222 #Enables custom ssh port trough firewall (change the port for your needs)</pre>
+
+4. Start firewall and enable it on startup by typing:
+
+      <pre>sudo ufw enable</pre>
+
+And now, for every port you need to open, use the command:
+      <pre>sudo ufw allow #PortNumber#</pre>
+
+
+
+
 
 
    
