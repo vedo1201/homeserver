@@ -41,4 +41,4 @@ Here is the guide:
 
 1. First, you need to check name of your network interfacein your terminal. To do this, type: 
 
-<pre> \```bash npm install my-awesome-package \``` </pre>
+<pre> ip link </pre>
