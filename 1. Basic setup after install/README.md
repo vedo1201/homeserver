@@ -115,7 +115,15 @@ Then, clean the system after updating by typing:
 
 <pre> sudo apt autoremove -y </pre>
 
-After they are installed, restart your server by typing
+After updates are installed, restart your server by typing
 
 <pre> sudo reboot </pre>
+
+### 3. Setting up automatic updates
+To make sure our system is always up to date, without needing to do manual update every time, we are going to install unattended upgrades by typing:
+
+<pre> sudo apt install unattended-upgrades && sudo dpkg-reconfigure --priority=low unattended-upgrades  </pre>
+
+On the screen that pops up, chose <ins> Yes </ins> and press ENTER
+
 
