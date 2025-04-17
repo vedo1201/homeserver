@@ -111,7 +111,11 @@ After the system finds latest updates, you need to install them by typing:
 
 <pre> sudo apt upgrade -y </pre>
 
-After they are instal, restart your server by typing
+Then, clean the system after updating by typing:
+
+<pre> sudo apt autoremove -y </pre>
+
+After they are installed, restart your server by typing
 
 <pre> sudo reboot </pre>
 
