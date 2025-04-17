@@ -39,6 +39,37 @@ setting up the static ip in router settings, or directly on server.
 Another way to set up static ip on ubuntu server is a bit different. You must edit some configuration files in system.
 Here is the guide:
 
-1. First, you need to check name of your network interfacein your terminal. To do this, type: 
+1. First, you need to check name of your network interface in your terminal. To do this, type: 
 
 <pre> ip link </pre>
+
+   You will get output similar to this:
+
+<pre> 2: enp2s0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 ... </pre>
+
+   In my case, name of network adapter is 'enp2s0'. Remember it because we will need it in config files.
+
+
+2. Now, you must find the netplan config file and open it in text editor.
+   To do this type:
+
+<pre> cd /etc/netplan </pre>
+
+   With this command, you will enter netplan folder. Now we need to find the config file name, and to do this, type:
+
+<pre> ls </pre>
+
+You will get output similar to this:
+
+<pre> 50-cloud-init.yaml </pre>
+
+Now, to open it type this command:
+
+<pre> sudo nano 50-cloud-init.yaml </pre>
+
+Replace '<ins>50-cloud-init.yaml</ins>'
+
+
+
+
+
