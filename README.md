@@ -12,7 +12,7 @@ This repo can be used as guide or help, either for complete beginner or user who
 
 In this guide, I've covrered some things that are must when we talk about stable, secure and reliable home server based on Ubuntu Server.
 
-# 1. Basic setup after install
+# 1. Basics
 
 The things that I have covered about server setup right after install are:
 
