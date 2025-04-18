@@ -23,7 +23,7 @@ The things that I have covered about server setup right after install are:
   4. Installing portainer (as a docker container) for graphical managment of docker containers.  [3. 4. Installing the Docker and Portainer](https://github.com/vedo1201/homeserver/tree/d5465c5cd91b216389256999d2fbecd10b485385/3.%204.%20Installing%20the%20Docker%20and%20Portainer)
   5. Setting up the SAMBA (file sharing system), so that disks in server can be accessed over network through the Windows File Explorer or basically any other device on the same network
       (This makes files easier to move, copy and manage, which is especially helpful for creating backup of docker containers, we will talk about that a little bit later.
-      Backing up containers and the whole server is really important because the whole idea is to make this server easy to re-deploy if something happens with software or hardware used in server.)
+      Backing up containers and the whole server is really important because the whole idea is to make this server easy to re-deploy if something happens with software or hardware used in server.) [5. SAMBA Setup](https://github.com/vedo1201/homeserver/tree/16e50f8d030b9116cf7fa71bae1ab730cee74fb3/5.%20SAMBA%20Setup)
 
 After doing those things, you are going to have the system that works smooth and has minimum downtime. 
 
