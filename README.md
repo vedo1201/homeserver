@@ -27,4 +27,4 @@ The things that I have covered about server setup right after install are:
 
 After doing those things, you are going to have the system that works smooth and has minimum downtime. 
 
-Next, we are going to setup some of the basic services
+Next, we are going to setup some of the basic services using docker.
