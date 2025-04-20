@@ -12,6 +12,9 @@ services:
     volumes:
       - /mnt/ssd/docker/qbittorrent/config:/config
       - /mnt/ssd/docker/qbittorrent/downloads:/downloads #optional
+      - /mnt/ssd/docker/qbittorrent/downloads/general:/downloads/general
+      - /mnt/ssd/docker/qbittorrent/downloads/movies:/downloads/movies
+      - /mnt/ssd/docker/qbittorrent/downloads/tv:/downloads/tv
     ports:
       - 8080:8080
       - 6881:6881
