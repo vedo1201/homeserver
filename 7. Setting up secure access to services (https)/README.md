@@ -156,6 +156,8 @@ Now we can access NginxProxyManager WEB UI by opennig up a browser and going to 
 
    ![{31ED0436-E106-4ACA-9F9E-05431F9A56FF}](https://github.com/user-attachments/assets/547b18b0-cfc2-404f-9430-8a9c65959802)
 
+   You have successfully added the ssl certificate and it is ready to be used with your services. Let me show you how to do that.
+
 
 
 
