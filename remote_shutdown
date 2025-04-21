@@ -1,0 +1,96 @@
+🔧 1. Instalacija Flask paketa
+bash
+Copy
+Edit
+sudo apt update
+sudo apt install python3-pip -y
+pip3 install flask
+✅ Ovo instalira Python i Flask koji nam treba za web servis.
+
+📁 2. Kreiranje Flask aplikacije za shutdown
+bash
+Copy
+Edit
+nano /home/korisnik/shutdown_server.py
+Ubaci sledeći kod (zameni korisnik ako je potrebno):
+
+python
+Copy
+Edit
+from flask import Flask, request
+import os
+
+app = Flask(__name__)
+
+TOKEN = "tajnitoken123"
+
+@app.route('/shutdown')
+def shutdown():
+    token = request.args.get('token')
+    if token != TOKEN:
+        return "Neautorizovan pristup.", 403
+
+    os.system("sudo shutdown now")
+    return "Server se gasi..."
+
+if __name__ == '__main__':
+    app.run(host='0.0.0.0', port=5000)
+✅ Ova aplikacija pokreće shutdown samo ako se prosledi tačan token.
+
+🔐 3. Dozvoli shutdown bez lozinke
+bash
+Copy
+Edit
+sudo visudo
+Na dno fajla dodaj:
+
+sql
+Copy
+Edit
+korisnik ALL=(ALL) NOPASSWD: /sbin/shutdown
+✅ Ovo omogućava Flask aplikaciji da izvrši shutdown bez potrebe za root lozinkom.
+
+⚙️ 4. Napravi systemd servis da Flask startuje pri paljenju servera
+bash
+Copy
+Edit
+sudo nano /etc/systemd/system/shutdown-web.service
+Ubaci:
+
+ini
+Copy
+Edit
+[Unit]
+Description=Flask server za shutdown
+After=network.target
+
+[Service]
+User=korisnik
+WorkingDirectory=/home/korisnik
+ExecStart=/usr/bin/python3 /home/korisnik/shutdown_server.py
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
+✅ Servis se startuje automatski i Flask aplikacija uvek radi u pozadini.
+
+▶️ 5. Aktiviraj i startuj servis
+bash
+Copy
+Edit
+sudo systemctl daemon-reexec
+sudo systemctl daemon-reload
+sudo systemctl enable shutdown-web.service
+sudo systemctl start shutdown-web.service
+✅ Ovim se Flask aplikacija pokreće automatski nakon svakog restartovanja servera.
+
+✅ 6. Ugašavanje servera klikom na link
+Otvorite iz browsera (računar ili telefon u mreži):
+
+perl
+Copy
+Edit
+http://IP_ADRESA_SERVERA:5000/shutdown?token=tajnitoken123
+Zameni IP_ADRESA_SERVERA sa pravom IP adresom servera.
+
+✅ Kada klikneš na ovaj link, server se automatski gasi ako je token tačan.
