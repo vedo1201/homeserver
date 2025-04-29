@@ -36,7 +36,7 @@ Here you need to identify the disk by its capacity and then format it.
 
    We are going to create the <ins>ext4</ins> filesystem by typing this command:
 
-      <pre> sudo mkfs.3xt4 /dev/sdX1 </pre>
+      <pre> sudo mkfs.ext4 /dev/sdX1 </pre>
    Replace X with your drive letter!
 
 4. Mounting the disk
